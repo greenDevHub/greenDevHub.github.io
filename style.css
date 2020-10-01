@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.text-clouds 
+{
+    color: #ecf0f1 !important;
+}
+
+.text-white
+{
+    color: white !important;
+}
+
+.text-dark
+{
+    color: #2c3e50;
+}
+
+.primary-green 
+{
+    background-color: #004846;
+}
+
+h1, h2, h3 
+{
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+p, a, span 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+@media(max-width: 767px) 
+{
+    p 
+    {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+.nav-item 
+{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: opacity 1s ease;
+    opacity: 0.8;
+}
+
+.nav-item:hover 
+{
+    opacity: 1;
+    color: #1E4132 !important;
+    text-decoration: none;
+}
+
+.section .container, .hero .hero-body, .hero .hero-head 
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav 
+{
+    padding-top: 20px;
+    max-height: 50px;
+}
+
+.paragraph 
+{
+    width: 600px;
+    line-height: 1.5em;
+}
+
+@media(min-width: 1024px) 
+{
+    .hero-body 
+    {
+        background-image: url(greenlib.png);
+        background-size: 30%;
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+    }
+    .hero-body p {width: 600px;}
+}
+
+.btn 
+{
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 30px;
+    transition: opacity 1s ease;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn:hover {opacity: 0.8;}
+
+.feature-img 
+{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.column 
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.column h3, .column p {align-self: center;}
+
+@media(max-width: 1024px) 
+{
+    .reverse-row-order 
+    {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+
+#news {text-align: center;}
+
+#news p 
+{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#footer p {padding: 20px;}
+
+#footer a {color: #FFFFFF !important;}
