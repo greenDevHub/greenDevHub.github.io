@@ -70,6 +70,13 @@ nav
     max-height: 50px;
 }
 
+.burger 
+{
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+
 .paragraph 
 {
     width: 600px;
@@ -80,7 +87,7 @@ nav
 {
     .hero-body 
     {
-        background-image: url(greenlib.png);
+        background-image: url(../img/greenlib.png);
         background-size: 30%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
