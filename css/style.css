@@ -85,14 +85,23 @@ nav
 
 @media(min-width: 1024px) 
 {
-    .hero-body 
+    .hero-body
     {
-        background-image: url(../img/team.png);
         background-size: 20%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
     .hero-body p {width: 600px;}
+
+    #home
+    {
+        background-image: url(../img/greenlib.png);
+    }
+
+    #team
+    {
+        background-image: url(../img/team.png);
+    }
 }
 
 .btn 
