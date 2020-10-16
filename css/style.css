@@ -32,6 +32,13 @@ p, a, span
     font-weight: 400;
 }
 
+.center 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 @media(max-width: 767px) 
 {
     p 
@@ -88,6 +95,14 @@ nav
     .hero-body p {width: 600px;}
 
     #home
+    {
+        background-image: url(../img/greenlib.png);
+        background-size: 20%;
+        background-position: 80% 50%;
+        background-repeat: no-repeat;
+    }
+
+    #product
     {
         background-image: url(../img/greenlib.png);
         background-size: 20%;
