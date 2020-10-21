@@ -49,7 +49,7 @@ p, a, span
 }
 
 
-.nav-item 
+.nav-item, .navbar-link
 {
     letter-spacing: 3px;
     text-transform: uppercase;
