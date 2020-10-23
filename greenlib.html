@@ -2,275 +2,307 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GreenDev - greenLib</title>
-    <link rel="icon" href="greendev.jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/burger.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GreenDev - greenLib</title>
+	<link rel="icon" href="greendev.jpg">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/burger.js"></script>
 </head>
 
 <body>
+	<div id="wrapper" class="has-text-centered-mobile">
+		<!-- Hero -->
+		<section id="hero" class="hero is-medium">
+			<div class="hero-head">
+				<nav class="navbar">
+					<div class="container">
+						<div class="navbar-brand">
+							<a class="navbar-item" href="index.html">
+								<h3 class="text-dark is-size-4">GreenDev</h3>
+							</a></div>
+						<div class="navbar-menu">
+							<div class="navbar-end">
+								<a class="nav-item navbar-item is-size-7" href="index.html">
+									start
+								</a>
+								<a class="nav-item navbar-item is-size-7" href="greenlib.html">
+									greenLib
+								</a>
 
-    <body>
-        <div id="wrapper" class="has-text-centered-mobile">
-            <!-- Hero -->
-            <section id="hero" class="hero is-medium">
-                <div class="hero-head">
-                    <nav class="navbar">
-                        <div class="container">
-                            <div class="navbar-brand">
-                                <a class="navbar-item" href="index.html">
-                                    <h3 class="text-dark is-size-4">GreenDev</h3>
-                                </a></div>
-                            <div class="navbar-menu">
-                                <div class="navbar-end">
-                                    <a class="nav-item navbar-item is-size-7" href="index.html">
-                                        start
-                                    </a>
-                                    <a class="nav-item navbar-item is-size-7" href="greenlib.html">
-                                        greenLib
-                                    </a>
+								<div class="navbar-item has-dropdown is-hoverable is-size-7">
+									<a class="navbar-link">
+										Ressourcen
+									</a>
 
-                                    <div class="navbar-item has-dropdown is-hoverable is-size-7">
-                                      <a class="navbar-link">
-                                        Ressourcen
-                                      </a>
-                              
-                                      <div class="navbar-dropdown">
-                                        <a class="navbar-item">
-                                          FAQ
-                                        </a>
-                                        <a class="navbar-item">
-                                          User Manual
-                                        </a>
-                                        <a class="navbar-item">
-                                          Installation Manual
-                                        </a>
-                                      </div>
-                                  </div>
-                                  
-                                    <a class="nav-item navbar-item is-size-7" href="team.html">
-                                        team
-                                    </a>
-                                    <a class="nav-item navbar-item is-size-7" href="mailto: greendev@web.de">
-                                        kontakt
-                                    </a>
-                                </div>
-                            </div>
-                            <a role="button" class="burger navbar-burger" aria-label="menu" aria-expanded="false">
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-                <div class="hero-body" id="product">
-                    <div class="container">
-                        <h1 class="text-dark is-size-1 is-size-3-mobile">greenLib</h1>
-                        <p class="has-text-green">
-                          Wir Präsentieren: die Lösung für ihre (Schul-)bibliothek!
-                        </p>
-                    </div>
-                </div>
-            </section>
+									<div class="navbar-dropdown">
+										<a class="navbar-item">
+											FAQ
+										</a>
+										<a class="navbar-item">
+											User Manual
+										</a>
+										<a class="navbar-item">
+											Installation Manual
+										</a>
+									</div>
+								</div>
 
-            <section class="section has-background-light">
-              <div class="container">
-                <div class="columns">
-                  <div class="column">
-                    <article class="notification is-primary media">
-                      <figure class="media-left">
-                        <span class="icon is-medium">
-                          <i class="fas fa-book fa-2x"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Verleih und Rückgabe von Büchern</h1>
-                          <p class="is-size-5">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
-                            justo duo dolores et ea rebum.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column">
-                    <article class="notification is-primary media">
-                      <figure class="media-left">
-                        <span class="icon is-medium">
-                          <i class="fas fa-2x fa-retweet"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Automatisierte Lehrbuchausgabe und -rückgabe</h1>
-                          <p class="is-size-5">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
-                            dolores et ea rebum.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column">
-                    <article class="notification is-primary media">
-                      <figure class="media-left">
-                        <span class="icon is-medium">
-                          <i class="fas fa-2x fa-rocket"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Schluss mit Excel Listen und manueller Verwaltung</h1>
-                          <p class="is-size-5">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
-                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam accusam accusam.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-            <section class="section">
-              <div class="container">
-                <div class="columns is-multiline">
-                  <div class="column is-one-third">
-                    <article class="notification media has-background-white">
-                      <figure class="media-left">
-                        <span class="icon">
-                          <i class="has-text-primary fas fa-money-bill-alt fa-lg"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Kostenlos</h1>
-                          <p class="is-size-5 subtitle">
-                            Die Software ist und bleibt zu <strong>100% kostenfrei</strong>.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column is-one-third">
-                    <article class="notification has-background-white media">
-                      <figure class="media-left">
-                        <span class="icon has-text-primary">
-                          <i class="fas fa-pencil-alt"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Design</h1>
-                          <p class="is-size-5 subtitle">
-                            greenLib besitzt eine intuitive Benutzeroberfläche.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column is-one-third">
-                    <article class="notification has-background-white media">
-                      <figure class="media-left">
-                        <span class="icon has-text-primary">
-                          <i class="fas fa-shield-alt"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Sicher</h1>
-                          <p class="is-size-5 subtitle">
-                            Datenbank gestützte Anwendung.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column is-one-third">
-                    <article class="notification has-background-white media">
-                      <figure class="media-left">
-                        <span class="icon has-text-primary">
-                          <i class="fas fa-lg fa-cogs"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Schnell</h1>
-                          <p class="is-size-5 subtitle">
-                             Keine manuelle Erfassung.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column is-one-third">
-                    <article class="notification has-background-white media">
-                      <figure class="media-left">
-                        <span class="icon has-text-primary">
-                          <i class="fas fa-lg fa-cube"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Feature X</h1>
-                          <p class="is-size-5 subtitle">
-                            Dieses Feature ist sehr geheim...
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-            
-                  <div class="column is-one-third">
-                    <article class="notification has-background-white media">
-                      <figure class="media-left">
-                        <span class="icon has-text-primary">
-                          <i class="fas fa-lg fa-cube"></i>
-                        </span>
-                      </figure>
-                      <div class="media-content">
-                        <div class="content">
-                          <h1 class="title is-size-4">Feauture Y</h1>
-                          <p class="is-size-5 subtitle">
-                            Noch viel geheimer...
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-            
-            
+								<a class="nav-item navbar-item is-size-7" href="team.html">
+									team
+								</a>
+								<a class="nav-item navbar-item is-size-7" href="mailto: greendev@web.de">
+									kontakt
+								</a>
+							</div>
+						</div>
+						<a role="button" class="burger navbar-burger" aria-label="menu" aria-expanded="false">
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="hero-body" id="product">
+				<div class="container">
+					<h1 class="text-dark is-size-1 is-size-3-mobile">greenLib</h1>
+					<p class="has-text-green">
+						Wir Präsentieren: die Lösung für ihre (Schul-)bibliothek!
+					</p>
+				</div>
+			</div>
+		</section>
 
-            <!-- Footer -->
-            <section id="footer" class="section primary-green">
-              <div class="container  has-text-centered">
-                  <p class="has-text-white is-size-7">
-                      Diese Seite befindet sich im Aufbau. Viele Funktionen sind noch nicht nutzbar.
-                  </p>
-                  <p><a href="impressum.html">Impressum und Datenschutzerklärung</a></p>
-              </div>
-          </section>
-        </div>
-        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    </body>
+		<section class="section has-background-light">
+			<div class="container">
+				<div class="columns">
+					<div class="column">
+						<article class="notification is-primary media">
+							<figure class="media-left">
+								<span class="icon is-medium">
+									<i class="fas fa-book fa-2x"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Verleih und Rückgabe von Büchern</h1>
+									<p class="is-size-5">
+										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+										eirmod tempor
+										invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+										eos et accusam et
+										justo duo dolores et ea rebum.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column">
+						<article class="notification is-primary media">
+							<figure class="media-left">
+								<span class="icon is-medium">
+									<i class="fas fa-2x fa-retweet"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Automatisierte Lehrbuchausgabe und -rückgabe</h1>
+									<p class="is-size-5">
+										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+										eirmod tempor invidunt
+										ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+										accusam et justo duo
+										dolores et ea rebum.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column">
+						<article class="notification is-primary media">
+							<figure class="media-left">
+								<span class="icon is-medium">
+									<i class="fas fa-2x fa-rocket"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Schluss mit Excel Listen und manueller Verwaltung
+									</h1>
+									<p class="is-size-5">
+										Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+										eirmod tempor invidunt
+										ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+										accusam accusam
+										accusam.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<div class="columns is-multiline">
+					<div class="column is-one-third">
+						<article class="notification media has-background-white">
+							<figure class="media-left">
+								<span class="icon">
+									<i class="has-text-primary fas fa-money-bill-alt fa-lg"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Kostenlos</h1>
+									<p class="is-size-5 subtitle">
+										Die Software ist und bleibt zu <strong>100% kostenfrei</strong>.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column is-one-third">
+						<article class="notification has-background-white media">
+							<figure class="media-left">
+								<span class="icon has-text-primary">
+									<i class="fas fa-pencil-alt"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Design</h1>
+									<p class="is-size-5 subtitle">
+										greenLib besitzt eine intuitive Benutzeroberfläche.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column is-one-third">
+						<article class="notification has-background-white media">
+							<figure class="media-left">
+								<span class="icon has-text-primary">
+									<i class="fas fa-shield-alt"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Sicher</h1>
+									<p class="is-size-5 subtitle">
+										Datenbank gestützte Anwendung.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column is-one-third">
+						<article class="notification has-background-white media">
+							<figure class="media-left">
+								<span class="icon has-text-primary">
+									<i class="fas fa-lg fa-cogs"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Schnell</h1>
+									<p class="is-size-5 subtitle">
+										Keine manuelle Erfassung.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column is-one-third">
+						<article class="notification has-background-white media">
+							<figure class="media-left">
+								<span class="icon has-text-primary">
+									<i class="fas fa-lg fa-cube"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Feature X</h1>
+									<p class="is-size-5 subtitle">
+										Dieses Feature ist sehr geheim...
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+
+					<div class="column is-one-third">
+						<article class="notification has-background-white media">
+							<figure class="media-left">
+								<span class="icon has-text-primary">
+									<i class="fas fa-lg fa-cube"></i>
+								</span>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<h1 class="title is-size-4">Feauture Y</h1>
+									<p class="is-size-5 subtitle">
+										Noch viel geheimer...
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<section id="footer" class="section primary-green">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-2 is-offset-3">
+						<h2><strong class="text-white">Connect</strong></h2>
+						<ul>
+							<li><a href="https://github.com/greenDevHub">GitHub</a></li>
+							<li><a href="https://www.instagram.com/">Instagram</a></li>
+							<li><a href="mailto: greendev@web.de">E-Mail</a></li>
+						</ul>
+					</div>
+					<div class="column is-3">
+						<h2><strong class="text-white">Ressourcen</strong></h2>
+						<ul>
+							<li><a href="#">Häufig gestellte Fragen</a></li>
+							<li><a href="#">Benutzerhandbuch</a></li>
+							<li><a href="#">Installationsanleitung</a></li>
+						</ul>
+					</div>
+					<div class="column is-4">
+						<h2><strong class="text-white">GreenDev</strong></h2>
+						<ul>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="impressum.html">Impressum</a></li>
+							<li><a href="impressum.html">Datenschutzerklärung</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="content has-text-centered">
+					<div class="container  has-text-centered">
+						<p class="has-text-white is-size-7">
+							Diese Seite befindet sich im Aufbau. Viele Funktionen sind noch nicht nutzbar.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</body>
 
 </html>
