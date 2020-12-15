@@ -17,7 +17,17 @@
 
 .primary-green 
 {
-    background-color: #004846;
+    background-color: #166E6C;
+}
+
+.feature-img
+{
+    width: 200px;
+}
+
+.turquoise
+{
+    background-color: #006966;
 }
 
 h1, h2, h3 
