@@ -112,7 +112,7 @@ nav
 
     #team
     {
-        background-image: url(../img/team.png);
+        background-image: url(../img/TeamIcon.png);
         background-size: 20%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
@@ -127,7 +127,7 @@ nav
     }
     #faq
     {
-        background-image: url(../img/faq.png);
+        background-image: url(../img/FAQIcon.png);
         background-size: 20%;
         background-position: 95% 50%;
         background-repeat: no-repeat;
