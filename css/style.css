@@ -194,17 +194,14 @@ nav
 #footer p {padding: 20px;}
 
 #footer a {
-    color: #FFFFFF !important;
+    color: #FFFFFF;
+}
+
+#footer a:hover {
+    color: #95a5a6;
+    text-decoration: none;
 }
 
 #footer li, h2 {    
     text-align: left;
-}
-
-#footer li:before {
-  content: '\f1b2';
-  font-family: 'FontAwesome';
-  float: left;
-  margin-left: -1.5em;
-  color: #147efb;
 }
