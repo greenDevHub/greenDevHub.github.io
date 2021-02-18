@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="de-DE">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GreenDev</title>
+        <link rel="icon" href="greendev.jpg">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/burger.js"></script>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GreenDev</title>
-    <link rel="icon" href="greendev.jpg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/burger.js"></script>
-</head>
-
-<body>
-    <div id="wrapper" class="has-text-centered-mobile">
-        <!-- Hero -->
+    <body>
+        <!-- Navbar -->
         <section id="hero" class="hero is-medium">
             <div class="hero-head">
                 <nav class="navbar">
@@ -51,13 +49,17 @@
                     </div>
                 </nav>
             </div>
+        </section>
+
+        <!-- Hero Body -->
+        <section id="hero" class="hero is-medium">
             <div class="hero-body" id="home">
                 <div class="container">
                     <h1 class="text-dark is-size-1 is-size-3-mobile">Wir pr&auml;sentieren: greenLib</h1>
                     <p class="has-text-green">
-                        Die perfekte Lösung für die Verwaltung Ihre Bibliothek!<br>Gehen Sie den
-						Schritt weg von Stift und Papier oder aufwändigen Excel Tabellen und optimieren sie die Prozesse
-						sowie Ihren eigenen Zeitaufwand mit greenLib.
+                         Die perfekte Lösung für die Verwaltung Ihre Bibliothek!<br>Gehen Sie den
+                        Schritt weg von Stift und Papier oder aufwändigen Excel Tabellen und optimieren sie die Prozesse
+                        sowie Ihren eigenen Zeitaufwand mit greenLib.
                     </p>
                     <button class="btn nav-item is-size-7"
                         onclick="location.href='https://github.com/greenDevHub/greenLib'" type="button">erfahre mehr
@@ -65,49 +67,112 @@
                 </div>
             </div>
         </section>
-
+	
         <!-- Features -->
-        <section id="features" class="section primary-green">
-            <div class="container">
-                <div class="columns reverse-row-order">
-                    <div class="column">
-                        <h3 class="text-white is-size-3">Verleih und Rückgabe von Büchern</h3>
-                        <p class="text-clouds paragraph">
-                            Das Kernstück jeder Bibliothek. Um diesen Prozess herum haben wir greenLib konzipiert. Um mit so wenig wie möglich Eingaben ein Buch ausleihen und wieder zurück geben zu können.
-                        </p>
+        <section id="features" class="hero has-background-white-ter">
+            <div class="hero-body">
+                <div class="content-wrapper">
+                    
+                    <!-- Feature 1 -->
+                    <div class="columns is-vcentered has-padding-top-50 has-padding-bottom-50 ">
+                        <div class="column noflex-flow is-10 is-offset-1 columns has-background-white features-box is-hidden-mobile">
+                            <div class="column is-5 is-offset-1">
+                                <figure class="image ">
+                                    <img src="img/woman.png" alt="feature" />
+                                </figure> 
+                            </div>
+                            <div class="column is-4 is-offset-1 has-margin-top-auto has-margin-bottom-auto">
+                                <div class="title">
+                                    <h2 class="has-text-black is-family-secondary has-text-weight-bold">Verleih und Rückgabe von Büchern</h2>
+                                </div>
+                                <span class="is-size-5">
+                                    Das Kernstück jeder Bibliothek. Um diesen Prozess herum haben wir greenLib konzipiert. Um mit so wenig wie möglich Eingaben ein 
+                                    Buch ausleihen und wieder zurück geben zu können.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="column features-box has-background-white columns is-hidden-tablet is-hidden-desktop ">
+                            <div class="column is-4 is-offset-1 has-margin-top-auto has-margin-bottom-auto">
+                                <div class="title">
+                                    <p class="has-text-black is-family-secondary has-text-weight-bold">Automatisierte Lehrbuchausgabe und -rückgabe</p>
+                                </div>
+                                <span class="is-size-5">
+                                    Speziell für Schulen ein elementarer Prozess: Die Ausgabe und Rücknahme von Lehrbücher zu Beginn bzw. Ende eines Schuljahres. 
+                                    Mit greenlib voll automatisiert auf Ebene von Klasse oder Klassenstufe möglich.
+                                </span>
+                            </div>
+                             <div class="column is-5 is-offset-1">
+                                <figure class="image ">
+                                    <img src="img/woman.png" alt="feature" />
+                                </figure> 
+                            </div>
+                        </div>
                     </div>
-                    <div class="column">
-                        <img class="feature-img" src="img/feature1.svg" alt="feature" />
+            
+                    <!-- Feature 2 -->
+                    <div class="columns is-vcentered has-padding-top-50 has-padding-bottom-50 ">
+                        <div class="column noflex-flow is-10 is-offset-1 columns has-background-white features-box is-hidden-mobile">
+                            <div class="column is-5 is-offset-1">
+                                <figure class="image ">
+                                    <img class="feature-img" src="img/computer.png" alt="feature" />
+                                </figure> 
+                            </div>
+                            <div class="column is-4 is-offset-1 has-margin-top-auto has-margin-bottom-auto">
+                                <div class="title">
+                                    <h2 class="has-text-black is-family-secondary has-text-weight-bold">Automatisierte Lehrbuchausgabe und -rückgabe</h2>
+                                </div>
+                                <span class="is-size-5">
+                                    Speziell für Schulen ein elementarer Prozess: Die Ausgabe und Rücknahme von Lehrbücher zu Beginn bzw. Ende eines Schuljahres. 
+                                    Mit greenlib voll automatisiert auf Ebene von Klasse oder Klassenstufe möglich.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="column features-box has-background-white columns is-hidden-tablet is-hidden-desktop ">
+                            <div class="column is-4 is-offset-1 has-margin-top-auto has-margin-bottom-auto">
+                                <div class="title">
+                                    <p class="has-text-black is-family-secondary has-text-weight-bold">Automatisierte Lehrbuchausgabe und -rückgabe</p>
+                                </div>
+                                <span class="is-size-5">
+                                    Speziell für Schulen ein elementarer Prozess: Die Ausgabe und Rücknahme von Lehrbücher zu Beginn bzw. Ende eines Schuljahres. 
+                                    Mit greenlib voll automatisiert auf Ebene von Klasse oder Klassenstufe möglich.
+                                </span>
+                            </div>
+                            <div class="column is-5 is-offset-1">
+                                <figure class="image ">
+                                    <img class="feature-img" src="img/computer.png" alt="feature" />
+                                </figure> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="features" class="section turquoise">
-            <div class="container">
-                <div class="columns">
-                    <div class="column">
-                        <img class="feature-img" src="img/icon.png" alt="feature" />
+	
+        <!-- News -->
+		<section id="news" class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="title-wrapper has-text-centered has-padding-15">
+                        <h2 class="title is-3 has-text-black " >Erfahre was es Neues bei uns gibt!</h2>
+                        <p class="subtilet is-3 has-text-black" >Folge uns auf Instagram</p>
+                        <div class="divider is-centered"></div>
                     </div>
-                    <div class="column">
-                        <h3 class="text-white is-size-3">Automatisierte Lehrbuchausgabe und -rückgabe </h3>
-                        <p class="text-clouds paragraph">
-                            Speziell für Schulen ein elementarer Prozess: Die Ausgabe und Rücknahme von Lehrbücher zu Beginn bzw. Ende eines Schuljahres.
-                            Mit greenlib voll automatisiert auf Ebene von Klasse oder Klassenstufe möglich.
-                        </p>
+                    <div class="content-wrapper">
+                        <div class="columns is-vcentered has-padding-top-50 has-padding-bottom-50">
+                            <div class="column is-10 is-offset-1 columns features-box">
+                                <div class="columns is-vcentered">
+                                    <div class="column">
+                                        <figure class="news has-background-white box">
+                                            <blockquote>
+                                                Keine neuen Nachrichten.
+                                            </blockquote>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- News-->
-        <section id="news" class="section">
-            <div class="container">
-                <h3 class="is-size-3">
-                    News</h3>
-                <p class="text-dark">
-                    Hier könnten aktuelle Mitteilungen rund um unsere Produkte und Dienstleistungen stehen. Dieser
-                    Bereich lässt sich aber auch völlig anderweitig nutzen.
-                </p>
             </div>
         </section>
 
@@ -125,7 +190,7 @@
                             <li>
                                 <i class="fa fa-chevron-right"></i>
                                 <a href="https://www.instagram.com/greendevhub/">Instagram</a>
-                            </li>
+                             </li>
                             <li>
                                 <i class="fa fa-chevron-right"></i>
                                 <a href="mailto: greendev@web.de">E-Mail</a>
@@ -163,11 +228,11 @@
                             <li>
                                 <i class="fa fa-chevron-right"></i>
                                 <a href="impressum.html">Datenschutzerklärung</a>
-                            </li>
+                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="content has-text-centered">
+                 <div class="content has-text-centered">
                     <div class="container  has-text-centered">
                         <p class="has-text-white is-size-7">
                             Diese Seite befindet sich im Aufbau. Viele Funktionen sind noch nicht nutzbar.
@@ -176,7 +241,6 @@
                 </div>
             </div>
         </section>
-    </div>
-</body>
+    </body>
 
 </html>
