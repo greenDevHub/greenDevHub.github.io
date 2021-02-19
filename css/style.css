@@ -16,12 +16,13 @@
   background-color: #166e6c;
 }
 
-.feature-img {
-  width: 200px;
+.secoundary-green {
+  background-color: #04a7a2 !important;
+  color: white;
 }
 
-.turquoise {
-  background-color: #006966;
+.text-secoundary-green {
+  color:#04a7a2;
 }
 
 h1,
@@ -49,6 +50,10 @@ span {
     max-width: 90%;
     margin: 0 auto;
   }
+}
+
+.feature-img {
+  width: 200px;
 }
 
 .nav-item,
