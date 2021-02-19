@@ -64,12 +64,6 @@ span {
   opacity: 0.8;
 }
 
-.nav-item:hover {
-  opacity: 1;
-  color: #1e4132 !important;
-  text-decoration: none;
-}
-
 .section .container,
 .hero .hero-body,
 .hero .hero-head {
@@ -184,7 +178,7 @@ nav {
 }
 
 #footer a:hover {
-  color: #95a5a6;
+  color: #ECF0F1;
   text-decoration: none;
 }
 
