@@ -233,3 +233,73 @@ h2 {
 .has-padding-top-50 {
   padding-top: 50px !important;
 }
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: left;
+  align-items: left;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+#login-error-msg {
+  font-size: small;
+  width: 23%;
+  text-align: left;
+  margin: 0;
+  padding: 5px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  margin-top: 1rem;
+  align-self: flex-start;
+  display: grid;
+  justify-items: left;
+  align-items: left;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  font-size: medium;
+  font-weight: lighter;
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #04a7a2;
+  cursor: pointer;
+  outline: none;
+}
+#download-button{
+  margin-top:1rem;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #04a7a2;
+  cursor: pointer;
+  outline: none;
+}
+

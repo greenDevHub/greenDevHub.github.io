@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GreenDev - Login</title>
+	<link rel="icon" href="greendev.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/burger.js"></script>
+</head>
+
+<body>
+	<div id="wrapper" class="has-text-centered-mobile">
+		<!-- Hero -->
+		<section id="hero" class="hero is-medium">
+			<div class="hero-head">
+				<nav class="navbar">
+					<div class="container">
+						<div class="navbar-brand">
+							<a class="navbar-item" href="index.html">
+								<h3 class="text-dark is-size-4">GreenDev</h3>
+							</a>
+						</div>
+						<div class="navbar-menu">
+							<div class="navbar-end">
+								<a class="nav-item navbar-item is-size-7" href="index.html">
+									start
+								</a>
+								<a class="nav-item navbar-item is-size-7" href="greenlib.html">
+									greenLib
+								</a>
+
+								<div class="navbar-item has-dropdown is-hoverable is-size-7">
+									<a class="navbar-link">
+										Ressourcen
+									</a>
+
+									<div class="navbar-dropdown">
+                                        <a class="navbar-item" href="faq.html">FAQ</a>
+                                        <a class="navbar-item" href="https://github.com/greenDevHub/greenLib/blob/master/Handbuch.pdf" target="_blank">User Manual</a>
+                                        <a class="navbar-item" href="https://github.com/greenDevHub/greenLib/blob/master/Handbuch.pdf" target="_blank">Installation Manual</a> 
+                                    </div>
+								</div>
+
+								<a class="nav-item navbar-item is-size-7" href="team.html">
+									team
+								</a>
+								<a class="nav-item navbar-item is-size-7" href="mailto: greendev@web.de">
+									kontakt
+								</a>
+							</div>
+						</div>
+						<a role="button" class="burger navbar-burger" aria-label="menu" aria-expanded="false">
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</a>
+					</div>
+				</nav>
+			</div>
+
+			<div class="hero-body" id="login">
+				<div class="container" id="login-wrapper">
+					<h1 class="text-dark is-size-1 is-size-3-mobile">Login</h1>
+					<p class="has-text-green">
+						Für den Zugriff auf erweiterte Informationen, bitte loggen Sie sich mit den entsprechenden Daten ein!
+					</p>
+                    <form id="login-form">
+                        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                        <input type="submit" value="Login" id="login-form-submit">
+                    </form>      
+                    <div id="login-error-msg-holder">
+                        <p id="login-error-msg">Ungültiger Nutzername <span id="error-msg-second-line">und/oder Passwort</span></p>
+                    </div>                  
+				</div>
+                <div class="container" id="content">
+
+                </div>
+                <script>
+                    const loginForm = document.getElementById("login-form");
+                    const loginButton = document.getElementById("login-form-submit");
+                    const loginErrorMsg = document.getElementById("login-error-msg");
+                    var loginEl = document.getElementById("login-wrapper");
+                    var el = document.getElementById('content');
+                    let loggedIn = false;
+                    var content;
+                
+                    loginButton.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        const username = loginForm.username.value;
+                        const password = loginForm.password.value;
+                        if(document.getElementById("download-button")!==null)return;
+                        if (username === "greenLib" && password === "gr33nL1b") {
+                            content = '<h1 class="text-dark is-size-1 is-size-3-mobile">Download</h1>';
+                            content += '<p class="has-text-green">Sie sind eingeloggt. Sie können nun den greenLib-Installer herunterladen.</p>'
+                            content += '<p class="has-text-green">Version: 1.1.0</p>'
+                            content += '<button type="submit" onclick="window.open(\'resources/greenLibSetup.msi\')" id="download-button">Download des Installers</button>';
+                            el.insertAdjacentHTML('beforeend',content);
+                            loginEl.remove();
+                        } else {
+                            loginErrorMsg.style.opacity = 1;
+                            el.removeChild(document.getElementById("download-button"));
+                        }
+                    })
+                </script>            
+			</div>
+
+		</section>
+
+		<!-- Footer -->
+        <section id="footer" class="section primary-green">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-2 is-offset-3">
+                        <h2><strong class="text-white">Connect</strong></h2>
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="https://www.github.com/greenDevHub/greenLib">GitHub</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="https://www.instagram.com/greendevhub/">Instagram</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="mailto: greendev@web.de">E-Mail</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-3">
+                        <h2><strong class="text-white">Ressourcen</strong></h2>
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="faq.html">Häufig gestellte Fragen</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="https://github.com/greenDevHub/greenLib/blob/master/Handbuch.pdf" target="_blank">Benutzerhandbuch</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="https://github.com/greenDevHub/greenLib/blob/master/Handbuch.pdf" target="_blank">Installationsanleitung</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-4">
+                        <h2><strong class="text-white">GreenDev</strong></h2>
+                        <ul>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="impressum.html">Impressum</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="impressum.html">Datenschutzerklärung</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-chevron-right"></i>
+                                <a href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content has-text-centered">
+                    <div class="container  has-text-centered">
+                        <p class="has-text-white is-size-7">
+                            Diese Seite befindet sich im Aufbau. Viele Funktionen sind noch nicht nutzbar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>
