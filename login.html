@@ -98,8 +98,8 @@
                         if (username === "greenLib" && password === "gr33nL1b") {
                             content = '<h1 class="text-dark is-size-1 is-size-3-mobile">Download</h1>';
                             content += '<p class="has-text-green">Sie sind eingeloggt. Sie können nun den greenLib-Installer herunterladen.</p>'
-                            content += '<p class="has-text-green">Version: 1.1.0</p>'
-                            content += '<button type="submit" onclick="window.open(\'resources/greenLibSetup.msi\')" id="download-button">Download des Installers</button>';
+                            content += '<button type="submit" onclick="window.open(\'resources/greenLibSetup.msi\')" id="download-button">Download Stable 1.1.0</button>';
+                            content += '<button type="submit" onclick="window.open(\'resources/greenLibSetupBeta.msi\')" id="download-button">Download Beta 1.1.1</button>';
                             el.insertAdjacentHTML('beforeend',content);
                             loginEl.remove();
                         } else {

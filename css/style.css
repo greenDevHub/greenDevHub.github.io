@@ -293,6 +293,7 @@ h2 {
 }
 #download-button{
   margin-top:1rem;
+  margin-right: 1rem;
   padding: 7px;
   border: none;
   border-radius: 5px;
