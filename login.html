@@ -87,26 +87,35 @@
                     const loginErrorMsg = document.getElementById("login-error-msg");
                     var loginEl = document.getElementById("login-wrapper");
                     var el = document.getElementById('content');
-                    let loggedIn = false;
+                        let loggedIn = false;
                     var content;
                 
                     loginButton.addEventListener("click", (e) => {
                         e.preventDefault();
                         const username = loginForm.username.value;
                         const password = loginForm.password.value;
-                        if(document.getElementById("download-button")!==null)return;
-                        if (username === "greenLib" && password === "gr33nL1b") {
-                            content = '<h1 class="text-dark is-size-1 is-size-3-mobile">Download</h1>';
-                            content += '<p class="has-text-green">Sie sind eingeloggt. Sie können nun den greenLib-Installer herunterladen.</p>'
-                            content += '<button type="submit" onclick="window.open(\'resources/greenLibSetup.msi\')" id="download-button">Download Stable 1.1.0</button>';
-                            content += '<button type="submit" onclick="window.open(\'resources/greenLibSetupBeta.msi\')" id="download-button">Download Beta 1.1.1</button>';
-                            el.insertAdjacentHTML('beforeend',content);
-                            loginEl.remove();
-                        } else {
-                            loginErrorMsg.style.opacity = 1;
-                            el.removeChild(document.getElementById("download-button"));
-                        }
-                    })
+                        let stableVersion = "x.x.x";
+                        let fileUrl = "";
+                        fetch("version.json")
+                            .then(response => response.json())
+                            .then(json => {
+                                stableVersion = json["version"];
+                                fileUrl = json["url"];
+                            }).then(() => {
+                                if (document.getElementById("download-button") !== null) return;
+                                if (username === "greenLib" && password === "gr33nL1b") {
+                                    content = `<h1 class="text-dark is-size-1 is-size-3-mobile">Download</h1>
+                            <p class="has-text-green">Sie sind eingeloggt. Sie können nun den greenLib-Installer herunterladen.</p>
+                            <button type="submit" onclick="window.open(\'${fileUrl}\')" id="download-button">Download Stable ${stableVersion}</button>
+                            <button type="submit" onclick="window.open(\'resources/greenLibSetupBeta.msi\')" id="download-button">Download Beta 1.1.1</button>`;
+                                    el.insertAdjacentHTML('beforeend', content);
+                                    loginEl.remove();
+                                } else {
+                                    loginErrorMsg.style.opacity = 1;
+                                    el.removeChild(document.getElementById("download-button"));
+                                }
+                            });
+                        });
                 </script>            
 			</div>
 
