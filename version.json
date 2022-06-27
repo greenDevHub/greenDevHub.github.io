@@ -1,95 +1,105 @@
 {
-    "version":"1.2.0",
-    "url":"resources/greenLibSetup.msi",
-    "changelog":[
+  "version": "1.2.1",
+  "url": "resources/greenLibSetup.msi",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "message": "",
+      "features": [
         {
-            "version":"1.0.0",
-            "message":"",
-            "features":[
-                {
-                    "feature":"-feature1"
-                },
-                {
-                    "feature":"-feature2"
-                },
-                {
-                    "feature":"-feature3"
-                }
-            ],
-            "bugs":[
-                {
-                    "bug":"-bug1"
-                },
-                {
-                    "bug":"-bug2"
-                },
-                {
-                    "bug":"-bug3"
-                }
-            ]
+          "feature": "-feature1"
         },
         {
-            "version":"1.1.0",
-            "message":"",
-            "features":[
-                {
-                    "feature":"-feature1"
-                },
-                {
-                    "feature":"-feature2"
-                },
-                {
-                    "feature":"-feature3"
-                }
-            ],
-            "bugs":[
-                {
-                    "bug":"-bug1"
-                },
-                {
-                    "bug":"-bug2"
-                },
-                {
-                    "bug":"-bug3"
-                }
-            ]
+          "feature": "-feature2"
         },
         {
-            "version":"1.1.1",
-            "message":"",
-            "features":[
-                {
-                    "feature":"- Importperformance erhöht"
-                },
-                {
-                    "feature":"- Übersicht neue Contextmenü Optionen"
-                },
-                {
-                    "feature":"- Buchautor ist keine notwendige Eigenschaft mehr"
-                }
-            ],
-            "bugs":[
-                {
-                    "bug":"- Farbmarkierung bei Autoausleihe repariert"
-                }
-            ]
-        },
-        {
-            "version":"1.2.0",
-            "message":"Auto-Updater",
-            "features":[
-                {
-                    "feature":"- greenLib kann nun automatisch (beim Start) und per Knopfdruck nach Updates suchen. Administratoren können diese installieren."
-                },
-                {
-                    "feature":"- Für das neuste Update wird ab sofort einmalig ein Changelog angezeigt mit allen Neuerungen."
-                }
-            ],
-            "bugs":[
-                {
-                    "bug":"- verschiedene Fehlerbehebungen"
-                }
-            ]
+          "feature": "-feature3"
         }
-    ]
+      ],
+      "bugs": [
+        {
+          "bug": "-bug1"
+        },
+        {
+          "bug": "-bug2"
+        },
+        {
+          "bug": "-bug3"
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "message": "",
+      "features": [
+        {
+          "feature": "-feature1"
+        },
+        {
+          "feature": "-feature2"
+        },
+        {
+          "feature": "-feature3"
+        }
+      ],
+      "bugs": [
+        {
+          "bug": "-bug1"
+        },
+        {
+          "bug": "-bug2"
+        },
+        {
+          "bug": "-bug3"
+        }
+      ]
+    },
+    {
+      "version": "1.1.1",
+      "message": "",
+      "features": [
+        {
+          "feature": "- Importperformance erhöht"
+        },
+        {
+          "feature": "- Übersicht neue Contextmenü Optionen"
+        },
+        {
+          "feature": "- Buchautor ist keine notwendige Eigenschaft mehr"
+        }
+      ],
+      "bugs": [
+        {
+          "bug": "- Farbmarkierung bei Autoausleihe repariert"
+        }
+      ]
+    },
+    {
+      "version": "1.2.0",
+      "message": "Auto-Updater",
+      "features": [
+        {
+          "feature": "- greenLib kann nun automatisch (beim Start) und per Knopfdruck nach Updates suchen. Administratoren können diese installieren."
+        },
+        {
+          "feature": "- Für das neuste Update wird ab sofort einmalig ein Changelog angezeigt mit allen Neuerungen."
+        }
+      ],
+      "bugs": [
+        {
+          "bug": "- verschiedene Fehlerbehebungen"
+        }
+      ]
+    },
+    {
+      "version": "1.2.1",
+      "message": "Auto-Updater",
+      "features": [],
+      "bugs": [
+        {
+          "bug": "- Fehlerbehebung im Import der Kundenverwaltung bezüglich Jahrgängen."
+        }
+      ]
+    }
+  ]
 }
